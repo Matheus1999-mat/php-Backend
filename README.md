@@ -23,8 +23,8 @@ Siga estas etapas para baixar e configurar o sistema:
 * Abra no VS Code:
     - Abra a pasta "crud" no VS Code. Garanta que a pasta seja aberta do diretorio `htdocs`.
 
-## Criação da 1º tabela no banco de dados 'contacts':
-    - Abra o arquivo "contacts.sql" no VS Code ae execulte o script para criar a tabela "contacts".
+## Criação das tabelas no banco de dados 'contacts':
+    - Abra o arquivo "contacts.sql" no VS Code e use o script para criar a tabela "contacts".
     ```sql
     CREATE TABLE `contacts` (
       `id` int(11) NOT NULL AUTO_INCREMENT primary key,
@@ -37,7 +37,7 @@ Siga estas etapas para baixar e configurar o sistema:
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     ```
 
-    - Create another table called "user" using this script:
+    - Crie uma outra tabela chamada "user" usando esse script:
     ```sql
     CREATE TABLE `user` (
         `id` int(11) NOT NULL AUTO_INCREMENT primary key,
