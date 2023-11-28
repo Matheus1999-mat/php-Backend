@@ -8,22 +8,22 @@ This PHP Backend System is designed for managing contacts. It includes a CRUD (C
 
 Follow these steps to download and set up the system:
 
-1. **Download from GitHub:** Clone or download the repository from [GitHub](https://github.com/your-username/your-repo).
+1. ##Download from GitHub:## 
 
-2. **Open XAMPP:**
+2. ##Open XAMPP:##
     - Start Apache.
     - Start MySQL.
 
-3. **Database Setup:**
+3. ##Database Setup:##
     - Create a database named "contacts" in MySQL.
 
-4. **Project Placement:**
+4. ##Project Placement:##
     - Paste the "crud" folder into the `htdocs` folder inside XAMPP.
 
-5. **Open in VS Code:**
+5. ##Open in VS Code:##
     - Open the "crud" folder in VS Code. Ensure that it is opened from the `htdocs` directory.
 
-6. **Database Table Creation:**
+6. ##Database Table Creation:##
     - Open the "contacts.sql" file in VS Code and execute the script to create the "contacts" table.
     ```sql
     CREATE TABLE `contacts` (
@@ -46,5 +46,5 @@ Follow these steps to download and set up the system:
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     ```
 
-7. **Access the System:**
+7. ##Access the System:##
     - Type "localhost/crud/login.php" in your browser.
