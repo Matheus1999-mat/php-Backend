@@ -1,40 +1,50 @@
-# php-Backend
-How to download and use this system:
+# PHP Backend System
 
-1-)Download it from GitHub.
+## Overview
 
-2-)Open xampp.
+This PHP Backend System is designed for managing contacts. It includes a CRUD (Create, Read, Update, Delete) functionality and user authentication.
 
-3-)Start Apache and start MySQL.
+## Installation
 
-4-)Create a database "contacts". 
+Follow these steps to download and set up the system:
 
-5-)Paste "crud" folder into htdocs folder, inside xampp.
+1. **Download from GitHub:** Clone or download the repository from [GitHub](https://github.com/your-username/your-repo).
 
-6-)Open "crud" folder in vs code. This folder must be open from htdocs.
+2. **Open XAMPP:**
+    - Start Apache.
+    - Start MySQL.
 
-7-)In vs code, open "contacts.sql" file. Create a table called "contacts". 
-For this, use this script:
-CREATE TABLE `contacts` (
-  `id` int(11) NOT NULL AUTO_INCREMENT primary key,
-  `fullName` varchar(200) NOT NULL,
-  `phone` varchar(100) NOT NULL,
-  `email` varchar(200) NOT NULL,
-  `address` varchar(300) NOT NULL,
-  `relation` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+3. **Database Setup:**
+    - Create a database named "contacts" in MySQL.
 
+4. **Project Placement:**
+    - Paste the "crud" folder into the `htdocs` folder inside XAMPP.
 
-8-)Create another table called "user". Use this script:
-CREATE TABLE `user` (
-    `id` int(11) NOT NULL AUTO_INCREMENT primary key,
-    `email` varchar(100) DEFAULT NULL,
-    `password` varchar(255) DEFAULT NULL
-  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+5. **Open in VS Code:**
+    - Open the "crud" folder in VS Code. Ensure that it is opened from the `htdocs` directory.
 
-9-)Type "localhost/crud/login.php", without "".
+6. **Database Table Creation:**
+    - Open the "contacts.sql" file in VS Code and execute the script to create the "contacts" table.
+    ```sql
+    CREATE TABLE `contacts` (
+      `id` int(11) NOT NULL AUTO_INCREMENT primary key,
+      `fullName` varchar(200) NOT NULL,
+      `phone` varchar(100) NOT NULL,
+      `email` varchar(200) NOT NULL,
+      `address` varchar(300) NOT NULL,
+      `relation` varchar(100) NOT NULL,
+      `created_at` datetime NOT NULL DEFAULT current_timestamp()
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    ```
 
+    - Create another table called "user" using this script:
+    ```sql
+    CREATE TABLE `user` (
+        `id` int(11) NOT NULL AUTO_INCREMENT primary key,
+        `email` varchar(100) DEFAULT NULL,
+        `password` varchar(255) DEFAULT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+    ```
 
-
-
+7. **Access the System:**
+    - Type "localhost/crud/login.php" in your browser.
