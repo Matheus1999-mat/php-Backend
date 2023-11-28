@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instructions</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d7ebff;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .btn-back-to-login {
+            display: inline-block;
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #000000;
+            border: #ffffff solid 1px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-back-to-login:hover {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: #000000 solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Welcome. Here are some instructions about this system.</h3>
+    <p>Press the button "Clear" to clean all textboxes.</p>
+    <p>Press the button "Save" to keep all your information.</p>
+    <p>Once all your information is successfully saved, it will be displayed on the screen.</p>
+    <p>If you want to quit the system or add another login, click the button "Back to Login."</p>
+    <div class="text-center">
+        <a href="login.php" class="btn btn-back-to-login">Back to Login</a>
+    </div>
+</body>
+
+</html>
