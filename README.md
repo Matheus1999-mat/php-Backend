@@ -1,30 +1,30 @@
 # PHP Backend System
 
-## Overview
+* Visão Gera
 
-This PHP Backend System is designed for managing contacts. It includes a CRUD (Create, Read, Update, Delete) functionality and user authentication.
+Esse Sistema de Backend em PHP foi projetado para gerenciar contatos. Ele inclui funcionalidades CRUD (Criar, Ler, Atualizar, Excluir) e autenticação de usuários.
 
 ## Installation
 
-Follow these steps to download and set up the system:
+Siga estas etapas para baixar e configurar o sistema:
 
-1. ##Download from GitHub:## 
+## Download from GitHub:
 
-2. ##Open XAMPP:##
+* Abra o XAMPP:
     - Start Apache.
     - Start MySQL.
 
-3. ##Database Setup:##
-    - Create a database named "contacts" in MySQL.
+* Setup do Bando de dados:
+    - Crie um banco de dados nomeando-o "contacts" no MySQL.
 
-4. ##Project Placement:##
-    - Paste the "crud" folder into the `htdocs` folder inside XAMPP.
+* Cole o projeto:
+    - Cole a pasta "crud" dentr do arquivo `htdocs` dentro do XAMPP.
 
-5. ##Open in VS Code:##
-    - Open the "crud" folder in VS Code. Ensure that it is opened from the `htdocs` directory.
+* Abra no VS Code:
+    - Abra a pasta "crud" no VS Code. Garanta que a pasta seja aberta do diretorio `htdocs`.
 
-6. ##Database Table Creation:##
-    - Open the "contacts.sql" file in VS Code and execute the script to create the "contacts" table.
+## Criação da 1º tabela no banco de dados 'contacts':
+    - Abra o arquivo "contacts.sql" no VS Code ae execulte o script para criar a tabela "contacts".
     ```sql
     CREATE TABLE `contacts` (
       `id` int(11) NOT NULL AUTO_INCREMENT primary key,
@@ -46,5 +46,5 @@ Follow these steps to download and set up the system:
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
     ```
 
-7. ##Access the System:##
-    - Type "localhost/crud/login.php" in your browser.
+* Acesse o sistema:
+    - Digite no seu navegador: "localhost/crud/login.php" - sem aspas.
